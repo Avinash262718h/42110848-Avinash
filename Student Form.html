@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="trial.css">
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(34, 33, 33);
+    text-shadow: 0 0 3px rgb(0, 0, 0, 0.3);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    text-align: center;
+    margin: 40px;
+    background-color: #F2DD6C;
+}
+.buttons{
+    display: flex;
+    justify-content: center; 
+}
+.student-form{
+    justify-content: center;
+}
+
+.table-form{
+    margin-left: auto;
+    margin-right: auto;
+    block-size: 300px;
+    width: 500px;
+    box-shadow: 0 1px 5px;
+    padding: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    border-radius: 10px;
+}
+.form-name input{
+    width: 300px;
+    max-width: 700px;
+    height: 30px;
+    border-radius: 8px;
+    border: none;
+}
+.title{
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+.text{
+    color: rgb(34, 33, 33);
+    text-shadow: 0 0 3px rgb(0, 0, 0, 0.3);
+}
+.buttons input{
+    margin: 20px;
+    border-radius: 5px;
+    font-size: large;
+    padding: 5px;
+    background-color: rgb(28,208,151);
+    width: 100px;
+    border: none;
+    box-shadow: 0 0 3px;
+
+}
+#submit{
+    margin-left: 75px;
+}
+#reset{
+    margin-right: 75px;
+}
+.buttons #submit:hover{
+    scale: 1.05;
+}
+.buttons #reset:hover{
+    scale: 1.05;
+}.table-form{
+    background-color: rgb(28, 208, 151);
+}
+</style>
+<body>
+    <div class="student-form">
+        <header class="title"><h1 class="text">Student Registration</h1></header>
+        <table class="table-form">
+            <form class="form">
+            <div class="table-1">
+                <tr class="form-name">
+                 <td class="name">First Name:</td>
+                 <td><input type="text" id="name" required placeholder="Enter First Name"></td>
+                </tr>
+                <tr class="form-name">
+                    <td class="name">Last Name:</td>
+                    <td><input type="text" id="name" required placeholder="Enter Last Name"></td>
+                   </tr>
+                   <tr class="form-name">
+                    <td class="name">Date of birth:</td>
+                    <td><input type="date" id="name" required></td>
+                   </tr>
+                   <tr class="form-name">
+                    <td class="name">Email:</td>
+                    <td><input type="email" id="name" required placeholder="Enter Email"></td>
+                   </tr>
+                   <tr class="form-name">
+                    <td class="name">Mobile Number:</td>
+                    <td><input type="tel" id="name" required placeholder="Enter Mobile Number"></td>
+                   </tr>
+                   
+                </table>
+            </div>
+            <div class="buttons">
+                <input class="reset" type="reset" id="reset">
+                <input class="submit" type="submit" id="submit">
+             </div>
+            </form>
+    </div>
+</body>
+</html>
