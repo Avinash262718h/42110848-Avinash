@@ -1,0 +1,197 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration</title>
+    <link rel="stylesheet" href="employee.css">
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(34, 33, 33);
+    text-shadow: 0 0 3px rgb(0, 0, 0, 0.3);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.container{
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px;
+}
+body{
+    margin-left: 30px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #F2DD6C;
+    padding: 10px;
+}
+.title{
+    font-size: 50px;
+    text-align: center;
+    margin: 25;
+    
+}
+.container .title{
+    font-size: 30px;
+    font-weight: 550;
+    margin-bottom: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(210, 205, 41);
+    text-shadow: 2px 2px 5px black;
+    text-align: center;
+}
+
+.employee-register .int-box input{
+    height: 20px;
+    background: transparent;
+    border-radius: 10px;
+    height: 30px;
+    border-color:black;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    width: 100%;
+}
+.employee-register .int-box select{
+    height: 45px;
+    width: 100%;
+    background: transparent;
+    border: 2px black solid;
+    border-radius: 10px;
+    font-size: 15px;
+}
+.employee-register .button{
+    margin-top: 20px;
+}
+.int-box{
+    
+    margin-bottom: 10px;
+}
+.int-box label{
+    font-size: 1rem;
+    pointer-events: none;
+    transition: 0.3s ease;
+    margin-bottom: 5px;
+    display: flex;
+    
+}
+.employee-register .int-box textarea{
+    background: transparent;
+}
+.employee-register .int-box .Department{
+    margin-top: 8px;
+    border-color: black;
+}
+.button input{
+    height: 45px;
+    width: 500px;
+    outline: none;
+    color: rgb(34, 33, 33);
+    text-shadow: 0 0 3px rgb(0, 0, 0, 0.3);
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    border:2px solid transparent;
+    background: white;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 3px 8px;
+    align-self: center;
+}
+.button input:hover{
+    background: transparent;
+    color: white;
+    border-color: white;
+}
+ .employee-register .h1{
+    text-align: center;
+    margin: 12;
+    font-weight: 3;
+ }
+ .container{
+    background-color: rgb(28, 208, 151);
+ }
+ .int-box{
+    color: rgb(34, 33, 33);
+    text-shadow: 0 0 3px rgb(0, 0, 0, 0.3);
+ }
+
+</style>
+<body>
+    <div class="title">
+        Employee Registraction Form
+        </div>
+    <form class="container">
+        
+        <div class="employee-register">
+            <h1 class="h1">Create an account</h1>
+            <div class="int-box">
+                <label class="fullname" for="Full Name">Full name</label>
+                <input type="text" required >
+            </div>
+            <div class="int-box">
+                <div class="emailaddress">
+                 <label for="Email Address">Email Address</label>
+                 <input type="email" required>
+                </div>
+            </div>
+            <div class="int-box">
+                <label class="mobilenumber" for="Mobile Number">Mobile Number</label>
+                <input type="tel" required>
+                </div>
+            <div class="int-box">
+                    <label class="salary" for="Salary">Salary</label>
+                    <input type="number" required >
+                    </div>
+            <div class="int-box">
+                <div class="Designation">
+                    <label class="Designation" for="Designation">Designation</label>
+                    <input type="text" required >
+                    </div>
+                </div>
+            <div class="int-box">
+                <div class="Department">
+                    <select class="Department">
+                        <div class="option">
+                        <option hidden>Department</option>
+                        <option class="IT">IT</option>
+                        <option class="CSE">CSE</option>
+                        <option class="ECE">ECE</option>
+                        </div>
+                    </div>
+                    </select>
+                </div>
+                    </div>
+            <div class="int-box">
+                <div class="address">
+                <p>Address</p>
+                <textarea rows="5" cols="75" required ></textarea>
+            </div>
+            </div>
+            <div class="int-box">
+          
+                <select class="country" required>
+                    <option hidden>Country</option>
+                    <option class="INDIA">INDIA</option>
+                    <option class="USA">USA</option>
+                    <option class="ENGLAND">ENGLAND</option>
+                    <option class="GERMANY">GERMANY</option>
+                    <option class="CHINA">CHINA</option>
+                    <option class="RUSSIA">RUSSIA</option>
+                </select>
+            </div>
+            <div class="button">
+                <input type="submit" value="Register">
+            </div>
+            </div>
+            </div>
+        </div>
+    </form>
+    
+</body>
+</html>
